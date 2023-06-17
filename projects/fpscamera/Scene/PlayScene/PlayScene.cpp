@@ -28,6 +28,7 @@ namespace My3dApp {
 		GameObjectManager::Initialize();
 		AssetManager::Initialize();
 		Score::Initialize();
+		DangerZone::Intialize();
 
 		//レティクルの生成
 		Reticle* reticle = new Reticle;
@@ -48,7 +49,6 @@ namespace My3dApp {
 		// // マップを生成
 		GameObjectManager::Entry(new Map(VGet(0, 0, 0)));
 
-		
 	}
 
 	PlayScene::~PlayScene()
@@ -66,6 +66,8 @@ namespace My3dApp {
 				GameObjectManager::Entry(dragon);*/
 				coolTime = 4.0f;
 			}
+
+		DangerZone::Update(deltaTime);
 
 		if (CheckHitKey(KEY_INPUT_R)||Life::GetLife()<1)
 		{
