@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\Animation">
+      <UniqueIdentifier>{53ac60d4-4419-426a-8a7a-a9181ee30961}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Collision">
+      <UniqueIdentifier>{b8ea0fb4-9879-4e42-94bb-168cbc0ebd0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GameObject">
+      <UniqueIdentifier>{53f27692-5fc9-4dc2-9db1-f80dfb165e01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\math">
+      <UniqueIdentifier>{8adaf69c-e3a8-4411-836c-887ec147387b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GameObject\Player">
+      <UniqueIdentifier>{be7fb462-eec5-4198-a251-51ce4659ebd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GameObject\Enemy">
+      <UniqueIdentifier>{89d9ebb6-4034-441b-822f-f9e82b4eba35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GameObject\Camera">
+      <UniqueIdentifier>{342fe771-bc56-4427-a771-6ee4f4f628d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GameObject\Map">
+      <UniqueIdentifier>{aad7573b-c966-4745-b34f-16ec1b3e9cb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Scene">
+      <UniqueIdentifier>{635fad75-1311-41a2-bc44-92a5bb7f4456}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Scene\PlayScene">
+      <UniqueIdentifier>{85e3bbca-c965-4151-9c1d-ef16ce552a76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Scene\ResultScene">
+      <UniqueIdentifier>{bba50a98-7bcf-4dfe-bd43-a0352c297dbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Scene\TitleScene">
+      <UniqueIdentifier>{d5f03e53-8750-4944-a115-38e6aaefd516}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\UI">
+      <UniqueIdentifier>{26ffd836-1709-4388-a570-79ab883473c7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Reticle.cpp">
+      <Filter>ソース ファイル\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Score.cpp">
+      <Filter>ソース ファイル\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\TimeManager.cpp">
+      <Filter>ソース ファイル\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="math\math3D.cpp">
+      <Filter>ソース ファイル\math</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\GameObject.cpp">
+      <Filter>ソース ファイル\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\GameObjectManager.cpp">
+      <Filter>ソース ファイル\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\Player\Player3D.cpp">
+      <Filter>ソース ファイル\GameObject\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\Player\PlayerBullet.cpp">
+      <Filter>ソース ファイル\GameObject\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\Player\PlayerGun.cpp">
+      <Filter>ソース ファイル\GameObject\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\Map\Map.cpp">
+      <Filter>ソース ファイル\GameObject\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\Enemy\Zako.cpp">
+      <Filter>ソース ファイル\GameObject\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\Enemy\EnemyManager.cpp">
+      <Filter>ソース ファイル\GameObject\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneBase.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneManager.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\PlayScene\PlayScene.cpp">
+      <Filter>ソース ファイル\Scene\PlayScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\ResultScene\ResultScene.cpp">
+      <Filter>ソース ファイル\Scene\ResultScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\TitleScene\TitleScene.cpp">
+      <Filter>ソース ファイル\Scene\TitleScene</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\Camera\CameraFps.cpp">
+      <Filter>ソース ファイル\GameObject\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Collision\Collision.cpp">
+      <Filter>ソース ファイル\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation\AnimationController.cpp">
+      <Filter>ソース ファイル\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation\AssetManager.cpp">
+      <Filter>ソース ファイル\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\Enemy\Dragon.cpp">
+      <Filter>ソース ファイル\GameObject\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Life.cpp">
+      <Filter>ソース ファイル\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\DangerZone.cpp">
+      <Filter>ソース ファイル\UI</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="UI\Reticle.h">
+      <Filter>ソース ファイル\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Score.h">
+      <Filter>ソース ファイル\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\TimeManager.h">
+      <Filter>ソース ファイル\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="math\math3D.h">
+      <Filter>ソース ファイル\math</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\GameObject.h">
+      <Filter>ソース ファイル\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\GameObjectManager.h">
+      <Filter>ソース ファイル\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\ObjectTag.h">
+      <Filter>ソース ファイル\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\Player\Player3D.h">
+      <Filter>ソース ファイル\GameObject\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\Player\PlayerBullet.h">
+      <Filter>ソース ファイル\GameObject\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\Player\PlayerGun.h">
+      <Filter>ソース ファイル\GameObject\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\Map\Map.h">
+      <Filter>ソース ファイル\GameObject\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\Enemy\Zako.h">
+      <Filter>ソース ファイル\GameObject\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\Enemy\EnemyManager.h">
+      <Filter>ソース ファイル\GameObject\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneBase.h">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneManager.h">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\PlayScene\PlayScene.h">
+      <Filter>ソース ファイル\Scene\PlayScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\ResultScene\ResultScene.h">
+      <Filter>ソース ファイル\Scene\ResultScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\TitleScene\TitleScene.h">
+      <Filter>ソース ファイル\Scene\TitleScene</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\Camera\CameraFps.h">
+      <Filter>ソース ファイル\GameObject\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision\Collision.h">
+      <Filter>ソース ファイル\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision\CollisionType.h">
+      <Filter>ソース ファイル\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation\AnimationController.h">
+      <Filter>ソース ファイル\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation\AssetManager.h">
+      <Filter>ソース ファイル\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\Enemy\Dragon.h">
+      <Filter>ソース ファイル\GameObject\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Life.h">
+      <Filter>ソース ファイル\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\DangerZone.h">
+      <Filter>ソース ファイル\UI</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
