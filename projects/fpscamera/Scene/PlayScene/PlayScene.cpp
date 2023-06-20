@@ -23,6 +23,7 @@ using namespace My3dApp;
 namespace My3dApp {
 	PlayScene::PlayScene()
 		:coolTime(1.5)
+		,BossFlag(FALSE)
 	{
 		// ゲームオブジェクトマネージャーを初期化
 		GameObjectManager::Initialize();
@@ -58,18 +59,26 @@ namespace My3dApp {
 	SceneBase* PlayScene::Update(float deltaTime)
 	{
 		coolTime -= deltaTime;
+			//雑魚配置
 			if (coolTime < 0)
 			{// 雑魚を配置
 				Zako* zako = new Zako;
 				GameObjectManager::Entry(zako);
-				/*Dragon* dragon = new Dragon;
-				GameObjectManager::Entry(dragon);*/
+				
 				coolTime = 4.0f;
 			}
 
+			//Bossの出現
+			if (!BossFlag&&Score::GetScore()>5)
+			{
+				Dragon* dragon = new Dragon;
+				GameObjectManager::Entry(dragon);
+				BossFlag = TRUE;
+			}
+			
 		DangerZone::Update(deltaTime);
 
-		if (CheckHitKey(KEY_INPUT_R)||Life::GetLife()<1)
+		if (CheckHitKey(KEY_INPUT_R)||Life::GetLife()<1||Score::GetGameClearFlag()==TRUE)
 		{
 			return new ResultScene();
 		}

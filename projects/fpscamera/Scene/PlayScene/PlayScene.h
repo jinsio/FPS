@@ -14,6 +14,7 @@ namespace My3dApp
 
     private:
         float coolTime;
+        bool BossFlag;
     };
 }
 

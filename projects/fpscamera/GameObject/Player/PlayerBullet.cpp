@@ -28,7 +28,7 @@ My3dApp::PlayerBullet::PlayerBullet(PlayerGun*playergun)
 
 	// “–‚½‚è”»’è‹…‚ğİ’è
 	mCollisionSphere.mLocalCenter = VGet(0, 0, 0);
-	mCollisionSphere.mRadius = 25.0f;
+	mCollisionSphere.mRadius = 50.0f;
 	mCollisionSphere.mWorldCenter = mPosition;
 }
 

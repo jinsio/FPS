@@ -13,9 +13,9 @@ My3dApp::Dragon::Dragon()
 	, mAnimControl(nullptr)
 	, mAnimTime(0)
 	, mCollisionFlag(TRUE)
+	, mSpeed(200.0f)
 {
 	mModelHandle = AssetManager::GetMesh("data/model/enemy/EnemyMax.mv1");
-	mSpeed = 500.0f;
 
 	GameObject* playergun = GameObjectManager::GetFirstGameObject(ObjectTag::PlayerGun);
 	GameObject* cameraptr = GameObjectManager::GetFirstGameObject(ObjectTag::Player);
@@ -23,7 +23,7 @@ My3dApp::Dragon::Dragon()
 	SetPosition(BOSS_SPOT);
 	SetDir(VNorm((VSub(playergun->GetPosition(), BOSS_SPOT))));//向き決定
 
-	MV1SetScale(mModelHandle, VGet(1.5f, 1.5f, 1.5f));
+	MV1SetScale(mModelHandle, VGet(3.0f, 3.0f, 3.0f));
 	MV1SetPosition(mModelHandle, mPosition);
 
 	// アニメーションコントローラ
@@ -91,8 +91,7 @@ void My3dApp::Dragon::OnCollisionEnter(GameObject* other)
 				mAnimControl->StartAnimation(1);
 				mDir = { 0 };
 				mCollisionFlag = FALSE;
-				other->SetAlive(FALSE);
-				Score::ScoreAdd();
+				Score::SetGameClearFlag(TRUE);
 			}
 		}
 	}

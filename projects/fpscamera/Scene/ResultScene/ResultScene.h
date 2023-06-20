@@ -28,6 +28,10 @@ namespace My3dApp {
 		/// </summary>
 		void Draw()override;
 
+	private:
+		int TextHandle;
+		int MovieHandle;
+		int graph;
 	};
 }
 
