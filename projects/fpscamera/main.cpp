@@ -17,7 +17,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 
 	// 画面モードのセット
 	SetGraphMode(1920, 1080, 16);
-	SetBackgroundColor(200, 255, 255);
+	SetBackgroundColor(238, 120, 0);
 	SetWindowSizeExtendRate(1.0);
 	//奥行0.1～1000までをカメラの描画範囲とする
 	SetCameraNearFar(1.0f, 2000.0f);

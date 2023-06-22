@@ -6,8 +6,11 @@ using namespace My3dApp;
 namespace My3dApp {
     TitleScene::TitleScene()
         :mHandle()
+        ,mPos()
     {
-        mHandle = LoadGraph("data/model/Title/_Title.png");
+        mHandle = LoadGraph("data/model/Title/Title2.png");
+        mPos.x = FirstPosX;
+        mPos.y = FirstPosY;
     }
     TitleScene::~TitleScene()
     {
@@ -27,6 +30,6 @@ namespace My3dApp {
     void TitleScene::Draw()
     {
         DrawFormatString(0, 0, GetColor(255, 255, 255), "TitleâÊñ :PÇ≈PlayÉVÅ[ÉìÇ÷à⁄çs");
-        DrawExtendGraph(0,100,1920,300,mHandle,TRUE);
+        DrawExtendGraph(1920/4,0,1920/2+1920/4,600/2,mHandle,TRUE);
     }
 }

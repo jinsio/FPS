@@ -30,8 +30,8 @@ namespace My3dApp
     }
     void ResultScene::Draw()
     {
-        DrawGraph(0, 0, TextHandle, TRUE);
         DrawGraph(0, 0, graph, TRUE);
+        DrawGraph(400, 0, TextHandle, TRUE);
 
         //printfDx("%d",MovieHandle,TRUE);
         //GetDrawScreenGraph(0, 0, 1920, 1080, graph);  // ゲーム画面を保存する（第三引数と第四引数はゲーム画面の大きさ）

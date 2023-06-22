@@ -29,6 +29,10 @@ namespace My3dApp {
 
     private:
         int mHandle;
+        VECTOR mPos;
+
+        const int FirstPosX=1920/4;
+        const int FirstPosY=-300;
     };
 }
 
